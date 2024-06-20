@@ -6,10 +6,10 @@ Its based on and is similar to HeteroChromia420's XQSS (XFCE4 Quickstart Script)
 
 Clone this repo and run the script
 
-  > git clone 'https://github.com/Ashii-sh/weedOS/'
-  > cd weedOS/
-  > sudo chmod +x quickstart-script.sh
-  > ./quickstart-script.sh
+> git clone 'https://github.com/Ashii-sh/weedOS/'
+> > cd weedOS/
+> sudo chmod +x quickstart-script.sh
+> ./quickstart-script.sh
 
 And thats it~!
 
