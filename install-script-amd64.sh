@@ -1,5 +1,5 @@
 clear
-echo "WeedOS II Beta v0.1.5"
+echo "WeedOS II Beta v0.1.6"
 echo "Made in FL < 3"
 echo ""
 echo "Starting in 3 seconds..."
@@ -32,7 +32,7 @@ mkdir ~/.icons
 cd cache
 git clone https://github.com/numixproject/numix-icon-theme-circle
 git clone https://github.com/numixproject/numix-icon-theme
-sudo cp -r numix-icon-theme-circle/Numix-* ~/.icons
-sudo cp -r numix-icon-theme-circle/Numix-* /usr/share/icons
-sudo cp -r numix-icon-theme/Numix-* ~/.icons
-sudo cp -r numix-icon-theme/Numix-* /usr/share/icons
+sudo cp -r numix-icon-theme-circle/Numix* ~/.icons
+sudo cp -r numix-icon-theme-circle/Numix* /usr/share/icons
+sudo cp -r numix-icon-theme/Numix* ~/.icons
+sudo cp -r numix-icon-theme/Numix* /usr/share/icons
