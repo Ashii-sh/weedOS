@@ -1,5 +1,5 @@
 clear
-echo "WeedOS II v0.1.4"
+echo "WeedOS II Beta v0.1.5"
 echo "Made in FL < 3"
 echo ""
 echo "Starting in 3 seconds..."
@@ -19,3 +19,20 @@ xfconf-query -c xsettings -p /Gtk/ShellShowsAppmenu -n -t bool -s true
 sudo cp ${WEEDOSDIRROOT}/Assets/52appmenu-gtk-module_add-to-gtk-modules /etc/X11/Xsession.d
 sudo apt remove uxterm xterm
 
+## Stage 2 
+mkdir ${WEEDOSDIRROOT}/cache
+mkdir ~/Desktop
+mkdir ~/Downloads
+mkdir ~/Documents
+mkdir ~/Pictures
+mkdir ~/Videos
+mkdir ~/.themes
+mkdir ~/.icons
+## theme res##
+cd cache
+git clone https://github.com/numixproject/numix-icon-theme-circle
+git clone https://github.com/numixproject/numix-icon-theme
+sudo cp -r numix-icon-theme-circle/Numix-* ~/.icons
+sudo cp -r numix-icon-theme-circle/Numix-* /usr/share/icons
+sudo cp -r numix-icon-theme/Numix-* ~/.icons
+sudo cp -r numix-icon-theme/Numix-* /usr/share/icons
