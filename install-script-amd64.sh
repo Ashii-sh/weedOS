@@ -1,5 +1,5 @@
 clear
-echo "WeedOS II Beta v0.1.6"
+echo "WeedOS II Beta v0.1.7"
 echo "Made in FL < 3"
 echo ""
 echo "Starting in 3 seconds..."
@@ -12,7 +12,7 @@ WEEDOSDIRROOT=${PWD}
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install wget git unzip firmware-iwlwifi firmware-realtek mesa-utils cpufrequtils dbus-x11 -y
-sudo apt install xserver-xorg xinit plymouth plymouth-themes lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 plank picom xfce4-whiskermenu-plugin fonts-roboto xfce4-terminal -y
+sudo apt install xserver-xorg xinit plymouth plymouth-themes lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 plank picom xfce4-whiskermenu-plugin fonts-roboto xfce4-terminal mugshot -y
 sudo apt install xfce4-appmenu-plugin vala-panel-appmenu appmenu* -y --no-install-recommends --no-install-suggests 
 xfconf-query -c xsettings -p /Gtk/ShellShowsMenubar -n -t bool -s true
 xfconf-query -c xsettings -p /Gtk/ShellShowsAppmenu -n -t bool -s true
