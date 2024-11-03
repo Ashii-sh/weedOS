@@ -1,5 +1,5 @@
 clear
-echo "WeedOS II Beta v0.1.8"
+echo "WeedOS II Beta v0.2.0"
 echo "Made in FL < 3"
 echo ""
 echo "Starting in 3 seconds..."
@@ -12,7 +12,7 @@ WEEDOSDIRROOT=${PWD}
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install wget git unzip firmware-iwlwifi firmware-realtek mesa-utils cpufrequtils dbus-x11 -y
-sudo apt install xserver-xorg xinit plymouth plymouth-themes lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 plank picom  xfce4-whiskermenu-plugin xfce4-power-manager-plugins fonts-roboto xfce4-terminal mugshot qt5ct -y
+sudo apt install xserver-xorg xinit plymouth plymouth-themes lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 plank picom  xfce4-whiskermenu-plugin xfce4-power-manager-plugins fonts-roboto xfce4-terminal mugshot qt5ct qt5-gtk-platformtheme qt5 -y
 sudo apt install xfce4-appmenu-plugin vala-panel-appmenu appmenu* -y --no-install-recommends --no-install-suggests 
 xfconf-query -c xsettings -p /Gtk/ShellShowsMenubar -n -t bool -s true
 xfconf-query -c xsettings -p /Gtk/ShellShowsAppmenu -n -t bool -s true
@@ -49,6 +49,15 @@ wget https://github.com/catppuccin/cursors/releases/download/v1.0.1/catppuccin-l
 unzip catppuccin-latte-light-cursors.zip
 cp -r catppuccin-latte-light-cursors/ ~/.icons
 cp -r catppuccin-latte-light-cursors/ /usr/share/icons
+cd ..
+sudo rm -rf ${WEEDOSDIRROOT}/cache/*
+cp Assets/Wallpapers* cache/
+cd cache/
+tar -xvf Wallpapers-PT-1.tar.gz
+tar -xvf Wallpapers-PT-2.tar.gz
+tar -xvf Wallpapers-PT-3.tar.gz
+sudo rm /usr/share/desktop-base/emerald-theme/wallpaper/contents/images/*
+cp *.svg /usr/share/desktop-base/emerald-theme/wallpaper/contents/images/
 cd ..
 sudo rm -rf ${WEEDOSDIRROOT}/cache/*
 
