@@ -1,5 +1,5 @@
 clear
-echo "WeedOS II Beta v0.2.1"
+echo "WeedOS II Beta v0.2.2"
 echo "Made in FL < 3"
 echo ""
 echo "Starting in 3 seconds..."
@@ -28,6 +28,7 @@ mkdir ~/Pictures
 mkdir ~/Videos
 mkdir ~/.themes
 mkdir ~/.icons
+mkdir ~/.config
 ## theme res##
 cd cache
 git clone https://github.com/numixproject/numix-icon-theme-circle
@@ -72,6 +73,11 @@ sudo rm /etc/lightdm/*
 sudo cp -r *.conf /etc/lightdm/
 cd ..
 sudo rm -rf ${WEEDOSDIRROOT}/cache/*
+cp ~/Assets/Config-11-03-24.zip ~/.config
+cd ~/.config
+unzip Config-11-03-24.zip
+sudo rm Config-11-03-24.zip
+cd ${WEEDOSDIRROOT}
 
 sudo apt remove uxterm xterm xfce4-appfinder
 
