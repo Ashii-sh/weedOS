@@ -1,5 +1,5 @@
 clear
-echo "WeedOS II Beta v0.2.0"
+echo "WeedOS II Beta v0.2.1"
 echo "Made in FL < 3"
 echo ""
 echo "Starting in 3 seconds..."
@@ -65,8 +65,16 @@ sudo rm -rf ${WEEDOSDIRROOT}/cache/*
 
 sudo apt install chromium vlc xfce4-screenshooter mousepad gnome-software flatpak gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
+cp Assets/LightDM-Config.zip cache/
+cd cache/
+unzip LightDM-Config.zip
+sudo rm /etc/lightdm/*
+sudo cp -r *.conf /etc/lightdm/
+cd ..
+sudo rm -rf ${WEEDOSDIRROOT}/cache/*
 
 sudo apt remove uxterm xterm xfce4-appfinder
 
-
+echo ''
+echo ''
+echo "Done."
