@@ -1,4 +1,4 @@
-# weedOS
+# What is it?
 A personalized Xfce4 customization install script thingymabober.
 It's based on and is similar to HeteroChromia420's XQSS (XFCE4 Quickstart Script).
 
