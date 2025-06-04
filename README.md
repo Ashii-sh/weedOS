@@ -1,5 +1,5 @@
 # weedOS
-This is a quickstart script that installs my personalized XFCE4 DE onto any Debian 12 System.
+A personalized Xfce4 customization install script thingymabober.
 It's based on and is similar to HeteroChromia420's XQSS (XFCE4 Quickstart Script).
 
 # How to use?
@@ -7,8 +7,8 @@ It's based on and is similar to HeteroChromia420's XQSS (XFCE4 Quickstart Script
 Clone this repo and run the script;
 
 ```
-git clone 'https://github.com/Ashii-sh/weedOS/'
-cd weedOS/
+git clone 'https://github.com/Ashii-sh/myXfce4/'
+cd myXfce4/
 sudo chmod +x quickstart-script.sh
 ./quickstart-script.sh
 ```
